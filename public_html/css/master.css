@@ -1,10 +1,13 @@
 /* ==== MAIN CSS ==== */
 
 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
 
-    font-family: "Raleway";
-    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../media/img/BG-01.jpg);
+    background-size: 100% auto;
     color: rgb(154, 117, 55);
 
 }
@@ -21,8 +24,9 @@ nav {
     width: 100%;
     background-color: #140f04;
     left: 0;
-    margin-top: 9em;
-    padding: 1em;
+    margin-top: 10em;
+    padding: 1.1em;
+    z-index: 100;
 
 }
 
@@ -52,20 +56,83 @@ nav ul li a {
 
 nav ul li a:hover {
 
-    background-color: #3d2e0d;
+    background-color: #291e09;
 
 }
+
+main {
+
+    position: absolute;
+    margin-top: 15em;
+    margin-bottom: 8em;
+    z-index: 0;
+
+}
+
+footer {
+
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+
+}
+
+footer ul {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+footer ul li {
+
+    display: inline;
+    margin-right: 0.5em;
+    float: right;
+
+}
+
+footer ul li a {
+
+    text-decoration: none;
+    color: rgb(154, 117, 55);
+    padding-left: 0em;
+    font-size: 1.2em;
+
+}
+
+
+
+/* ==== ID:s ==== */
+
+
+
 
 
 /* ==== CLASSES ==== */
 
 .logo-size {
 
-    max-width: 600px;
-    width: 50vw;
+    max-width: 500px;
+    width: 70vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
+
+}
+
+.background {
+
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-top: 0;
+    padding-bottom: 10em;
+    z-index: 80;
 
 }
 
@@ -77,15 +144,29 @@ nav ul li a:hover {
     margin-left: 50vw;
     transform: translateX(-50%);
     position: fixed;
-    z-index: 100;
+    padding: 0;
+    z-index: 90;
 
 }
 
 .wrapper {
 
+    display: grid;
     max-width: 900px;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    padding: 0;
+
+}
+
+.footwrapper {
+
+    display: grid;
+    max-width: 900px;
+    width: 70%;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    padding: 0;
 
 }
