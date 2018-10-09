@@ -1,0 +1,91 @@
+/* ==== MAIN CSS ==== */
+
+
+body {
+
+    font-family: "Raleway";
+    background-color: black;
+    color: rgb(154, 117, 55);
+
+}
+
+h1 {
+
+    color: rgb(154, 117, 55);
+
+}
+
+nav {
+
+    position: fixed;
+    width: 100%;
+    background-color: #140f04;
+    left: 0;
+    margin-top: 9em;
+    padding: 1em;
+
+}
+
+nav ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li {
+
+    display: inline;
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: rgb(154, 117, 55);
+    font-weight: bold;
+    padding: 1em;
+
+
+}
+
+nav ul li a:hover {
+
+    background-color: #3d2e0d;
+
+}
+
+
+/* ==== CLASSES ==== */
+
+.logo-size {
+
+    max-width: 600px;
+    width: 50vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header {
+
+    display: block;
+    max-width: 100vw;
+    margin-top: 0;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 100;
+
+}
+
+.wrapper {
+
+    max-width: 900px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
