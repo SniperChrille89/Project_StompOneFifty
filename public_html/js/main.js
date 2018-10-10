@@ -16,3 +16,8 @@ function navToggle() {
     }
 
 }
+
+// PARALLAX SCROLLING
+
+$('.parllax-window').parallax({imageSrc: '/media/img/BG-01.jpg'});
+

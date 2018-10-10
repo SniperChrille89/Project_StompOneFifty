@@ -18,6 +18,12 @@ h1 {
 
 }
 
+h2 {
+
+    padding: 0;
+
+}
+
 main {
 
     position: absolute;
@@ -77,6 +83,22 @@ footer ul li a:hover {
 
     float: right;
     display: block;
+
+}
+
+#fbIcon {
+
+    text-decoration: none;
+    color: rgb(154, 117, 55);
+    padding: 0;
+    font-size: 1.5em;
+
+}
+
+#fbIcon:hover {
+
+    animation: fadeIn 0.1s linear;
+    color: rgb(223, 169, 76);
 
 }
 
@@ -195,7 +217,6 @@ footer ul li a:hover {
 
 .wrapper {
 
-    display: grid;
     max-width: 900px;
     width: 70%;
     margin-left: 50vw;
@@ -216,11 +237,68 @@ footer ul li a:hover {
 
 }
 
+.img-size {
+
+    max-width: 250px;
+    width: 35vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+.img-size-2 {
+
+    max-width: 150px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+.col-1 {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(154, 117, 55);
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+.col-1 small {
+
+    margin-left: 0.5em;
+
+}
+
+.center {
+
+    margin: 0 auto;
+
+}
+
+.center-2 {
+
+    margin: 0 auto;
+
+}
+
 
 
 /* ==== MEDIA QUERIES ==== */
 
 @media screen and (min-width: 700px) {
+
+    h2 {
+
+        margin: 0;
+    
+    }
 
     @keyframes fadeIn {
 
@@ -254,19 +332,42 @@ footer ul li a:hover {
 
     .img-size {
 
-        max-width: 200px;
-        height: auto;
+        max-width: 250px;
 
     }
 
-    .grid-container {
+    .center {
+
+        margin: 0;
+
+    }
+
+    .col-2 {
 
         display: grid;
-        margin: 0;
-        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2em;
+        margin-bottom: 2em;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: rgb(154, 117, 55);
+        padding-top: 1em;
+        padding-bottom: 1em;
 
     }
 
-    
+    .col-3 {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2em;
+        margin-bottom: 2em;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: rgb(154, 117, 55);
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+    }
 
 }
