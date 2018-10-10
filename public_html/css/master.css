@@ -18,48 +18,6 @@ h1 {
 
 }
 
-nav {
-
-    position: fixed;
-    width: 100%;
-    background-color: #140f04;
-    left: 0;
-    margin-top: 10em;
-    padding: 1.1em;
-    z-index: 100;
-
-}
-
-nav ul {
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-nav ul li {
-
-    display: inline;
-
-}
-
-nav ul li a {
-
-    text-decoration: none;
-    color: rgb(154, 117, 55);
-    font-weight: bold;
-    padding: 1em;
-
-
-}
-
-nav ul li a:hover {
-
-    background-color: #291e09;
-
-}
-
 main {
 
     position: absolute;
@@ -71,7 +29,7 @@ main {
 
 footer {
 
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.88);
     position: fixed;
     width: 100%;
     left: 0;
@@ -99,20 +57,106 @@ footer ul li a {
 
     text-decoration: none;
     color: rgb(154, 117, 55);
-    padding-left: 0em;
-    font-size: 1.2em;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+
+}
+
+footer ul li a:hover {
+
+    animation: fadeIn 0.1s linear;
+    color: rgb(223, 169, 76);
 
 }
 
 
 
-/* ==== ID:s ==== */
+/* ==== ID:S ==== */
 
+#menu-icon {
 
+    float: right;
+    display: block;
+
+}
 
 
 
 /* ==== CLASSES ==== */
+
+.navigationBar {
+
+    position: fixed;
+    width: 100%;
+    background-color: #140f04;
+    left: 0;
+    margin-top: 10em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    z-index: 100;
+
+}
+
+.navigationBar ul {
+
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.navigationBar ul li {
+
+    display: inline;
+
+}
+
+.navigationBar ul li a {
+
+    text-decoration: none;
+    color: rgb(154, 117, 55);
+    font-weight: bold;
+    padding: 1em;
+    display: none;
+
+}
+
+.navigationBar ul li a:hover {
+
+    animation: fadeIn 0.1s linear;
+    color: rgb(223, 169, 76);
+
+}
+
+.navigationBar ul li:first-child > a {
+
+    display: inline-block;
+
+}
+
+.navigationBar.dropmenu ul li a {
+
+    display: block;
+    top: 1em;
+    float: none;
+
+}
+
+.navigationBar.dropmenu #menu-icon {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.material-icons {
+
+    font-size: 0.9em;
+
+}
 
 .logo-size {
 
@@ -128,7 +172,7 @@ footer ul li a {
 .background {
 
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.88);
     width: 100%;
     margin-top: 0;
     padding-bottom: 10em;
@@ -163,10 +207,49 @@ footer ul li a {
 .footwrapper {
 
     display: grid;
-    max-width: 900px;
+    max-width: 890px;
     width: 70%;
     margin-left: 50vw;
+    margin-bottom: 0;
     transform: translateX(-50%);
     padding: 0;
+
+}
+
+
+
+/* ==== MEDIA QUERIES ==== */
+
+@media screen and (min-width: 700px) {
+
+    @keyframes fadeIn {
+
+        0% {color: rgb(154, 117, 55);}
+        100% {color: rgb(223, 169, 76);}
+    
+    }
+
+    .navWrapper {
+
+        max-width: 900px;
+        width: 70%;
+        margin-left: 50vw;
+        transform: translateX(-50%);
+        padding: 0;
+
+    }
+
+    .navigationBar ul li a {
+
+        display: inline-block;
+        padding-left: 0;
+    
+    }
+
+    #menu-icon {
+
+        display: none;
+
+    }
 
 }
