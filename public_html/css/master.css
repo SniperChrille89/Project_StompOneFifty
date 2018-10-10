@@ -252,4 +252,21 @@ footer ul li a:hover {
 
     }
 
+    .img-size {
+
+        max-width: 200px;
+        height: auto;
+
+    }
+
+    .grid-container {
+
+        display: grid;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    
+
 }
