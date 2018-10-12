@@ -16,9 +16,3 @@ function navToggle() {
     }
 
 }
-
-// ANIMATE SCROLL BANNER
-
-
-
-

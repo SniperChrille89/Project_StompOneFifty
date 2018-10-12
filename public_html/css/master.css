@@ -47,6 +47,8 @@ footer {
     left: 0;
     bottom: 0;
     margin: 0;
+    border-top: 1px solid;
+    border-color: rgb(73, 56, 28);
 
 }
 
@@ -127,7 +129,7 @@ input[type=password] {
 
 #fbIcon:hover {
 
-    animation: fadeIn 0.1s linear;
+    animation: fadeIn 0.2s linear;
     color: rgb(223, 169, 76);
 
 }
@@ -147,21 +149,42 @@ input[type=password] {
     padding-bottom: 0.5em;
     z-index: 95;
     border-bottom: 1px solid;
-    border-color:  rgb(154, 117, 55);
+    border-color:  rgb(73, 56, 28);
 
 }
 
 .banWrapper {
 
-    position: relative;
+    display: block;
     max-width: 900px;
     width: 70%;
+    height: 1.1em;
     margin-left: 50vw;
     transform: translateX(-50%);
     padding: 0;
+    position: relative;
     overflow: hidden;
+    font-weight: bold;
 
 }
+
+.banWrapper span {
+
+    position: relative;
+    font-size: 0.8em;
+    width: 110%;
+    animation: move 12s linear infinite;
+
+}
+
+@keyframes move {
+    
+    from {left: 110%;}
+    to {left: -100%}
+
+}
+
+
 
 .navigationBar {
 
@@ -175,7 +198,7 @@ input[type=password] {
     z-index: 100;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    border-color:  rgb(154, 117, 55);
+    border-color:  rgb(73, 56, 28);
 
 }
 
@@ -218,7 +241,7 @@ input[type=password] {
 
 .navigationBar ul li a:hover {
 
-    animation: fadeIn 0.1s linear;
+    animation: fadeIn 0.2s linear;
     color: rgb(223, 169, 76);
 
 }
