@@ -24,6 +24,12 @@ h2 {
 
 }
 
+h3 {
+
+    padding: 0;
+
+}
+
 main {
 
     position: absolute;
@@ -63,8 +69,8 @@ footer ul li a {
 
     text-decoration: none;
     color: rgb(154, 117, 55);
-    padding-left: 0.5em;
-    font-size: 1.5em;
+    padding-left: 0.3em;
+    font-size: 1em;
 
 }
 
@@ -75,6 +81,30 @@ footer ul li a:hover {
 
 }
 
+fieldset {
+
+    border: 1px solid;
+    border-color: rgb(154, 117, 55);
+
+}
+
+input[type=text] {
+
+    border: 1px solid;
+    border-color: rgb(154, 117, 55);
+    background-color: rgba(154, 117, 55, 0.1);
+    color: rgb(154, 117, 55);
+
+}
+
+input[type=password] {
+
+    border: 1px solid;
+    border-color: rgb(154, 117, 55);
+    background-color: rgba(154, 117, 55, 0.1);
+    color: rgb(154, 117, 55);
+
+}
 
 
 /* ==== ID:S ==== */
@@ -106,6 +136,33 @@ footer ul li a:hover {
 
 /* ==== CLASSES ==== */
 
+.scrollbanner {
+
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    margin-top: 13.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    z-index: 95;
+    border-bottom: 1px solid;
+    border-color:  rgb(154, 117, 55);
+
+}
+
+.banWrapper {
+
+    position: relative;
+    max-width: 900px;
+    width: 70%;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    padding: 0;
+    overflow: hidden;
+
+}
+
 .navigationBar {
 
     position: fixed;
@@ -116,6 +173,9 @@ footer ul li a:hover {
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     z-index: 100;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color:  rgb(154, 117, 55);
 
 }
 
@@ -138,10 +198,21 @@ footer ul li a:hover {
 .navigationBar ul li a {
 
     text-decoration: none;
-    color: rgb(154, 117, 55);
     font-weight: bold;
     padding: 1em;
     display: none;
+
+}
+
+.live {
+
+    color: rgb(154, 117, 55);
+
+}
+
+.dead {
+
+    color: rgb(73, 56, 28);
 
 }
 
@@ -294,6 +365,33 @@ footer ul li a:hover {
 
 @media screen and (min-width: 700px) {
 
+    .navWrapper {
+
+        max-width: 900px;
+        width: 70%;
+        margin-left: 50vw;
+        transform: translateX(-50%);
+        padding: 0;
+
+    }
+
+    .navigationBar ul li a {
+
+        display: inline-block;
+        padding-left: 0;
+    
+    }
+
+    #menu-icon {
+
+        display: none;
+
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
     h2 {
 
         margin: 0;
@@ -367,6 +465,22 @@ footer ul li a:hover {
         border-color: rgb(154, 117, 55);
         padding-top: 1em;
         padding-bottom: 1em;
+
+    }
+
+    footer ul li a {
+
+        text-decoration: none;
+        color: rgb(154, 117, 55);
+        padding-left: 0.5em;
+        font-size: 1.5em;
+    
+    }
+
+    .widthControl {
+
+        max-width: 400px;
+        padding-right: 2em;
 
     }
 

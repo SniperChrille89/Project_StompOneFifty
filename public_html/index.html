@@ -13,6 +13,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/master.css">
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/crawler.js">/* Text and/or Image Crawler Script v1.53 (c)2009-2011 John Davenport Scheuer
+            as first seen in http://www.dynamicdrive.com/forums/
+            username: jscheuer1 - This Notice Must Remain for Legal Use
+         */</script>
 
     </head>
 
@@ -33,14 +37,15 @@
 
                 <ul>
 
-                    <li><a href="index.html">| Home |</a></li>
-                    <li><a href="topfive.html ">| Top 5 |</a></li>
-                    <li><a href="producers.html">| Producers |</a></li>
-                    <li><a href="subscribe.html">| Subscribe |</a></li>
+                    <li><a href="index.html" class="live">| Home |</a></li>
+                    <li><a href="topfive.html" class="live">| Top 5 |</a></li>
+                    <li><a href="#link" class="dead">| Forums |</a></li>
+                    <li><a href="producers.html" class="live">| Producers |</a></li>
+                    <li><a href="subscribe.html" class="live">| Newsletter |</a></li>
 
                     <li>
 
-                        <a href="javascript:void(0)" id="menu-icon" onclick="navToggle()"><i class="material-icons">menu</i>   
+                        <a href="javascript:void(0)" id="menu-icon" onclick="navToggle()"><i class="material-icons live">menu</i>   
                         </a>
         
                     </li>
@@ -51,11 +56,44 @@
 
         </nav>
 
+        <div class="scrollbanner">
+
+            <div class="banWrapper">
+
+                <div class="marquee" id="mycrawler">
+                    <small>Qlimax 2018 - The Gamechanger November 24 21:00 !SOLD OUT!</small>
+                </div>
+
+            </div>
+
+        </div>
+
         <main>
 
             <div class="wrapper">
 
                 <h1>The Scene</h1>
+                <p><i>Welcome home, dear Hardstyler!</i></p>
+
+                <div class="col-1 col-2">
+
+                    <div class="center">
+                        <img src="media/img/Qlimax-2018.jpg" class="img-size">
+                    </div>
+
+                    <div>
+                        <h2>Qlimax 2018 - The Gamechanger</h2>
+                        <p>"As life transforms, can we control our faith?<br> Qlimax 2018 | The Game Changer will take place on 24 November at the GelreDome in Arnhem.
+                        Qlimax 2018 is sold out. Hotel Packages including tickets are available at travel.q-dance.com. Descend to the deepest levels of our code. Game on."
+                        </p>
+
+                        <p>The most iconic Hardstyle event of them all. You can expect this years edition to be an out of this world experience! <br><br> !! SOLD OUT !!
+                        </p>
+
+                        <a href="https://www.facebook.com/events/260268867859075/" target="_blank"><i class="fa fa-facebook-square" id="fbIcon"></i></a>
+                    </div>
+
+                </div>
 
                 <div class="col-1 col-2">
 
@@ -112,6 +150,10 @@
 
                     <li>
                         <a href="#link"><i class="fa fa-instagram"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#link"><i class="fa fa-youtube"></i></a>
                     </li>
         
                 </ul>

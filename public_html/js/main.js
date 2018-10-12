@@ -17,7 +17,8 @@ function navToggle() {
 
 }
 
-// PARALLAX SCROLLING
+// ANIMATE SCROLL BANNER
 
-$('.parllax-window').parallax({imageSrc: '/media/img/BG-01.jpg'});
+
+
 
