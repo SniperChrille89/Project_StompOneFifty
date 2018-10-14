@@ -395,6 +395,54 @@ input[type=submit] {
 
 
 
+/* ==== POP UP MESSAGE WINDOW ==== */
+
+.popWindow {
+
+    display: none;
+    position: fixed;
+    z-index: 200;
+    margin-top: 5em;
+    margin-left: 50vw;
+    padding: 0;
+    transform: translateX(-50%);
+    max-width: 900px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-color: rgb(154, 117, 55);
+
+}
+
+.popWindowContent {
+
+    text-align: center;
+
+}
+
+.close {
+
+    float: right;
+    color: rgb(154, 117, 55);
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 0;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-bottom: 0;
+    margin-top: 0;
+
+}
+
+.close:hover,
+.close:focus {
+
+    cursor: pointer;
+
+}
+
+
+
 /* ==== MEDIA QUERIES ==== */
 
 @media screen and (min-width: 700px) {
