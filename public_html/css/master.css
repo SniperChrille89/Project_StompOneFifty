@@ -108,6 +108,17 @@ input[type=password] {
 
 }
 
+input[type=submit] {
+
+    border: 1px solid;
+    border-color: rgb(154, 117, 55);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(154, 117, 55);
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+
 
 /* ==== ID:S ==== */
 
