@@ -126,6 +126,7 @@ input[type=submit] {
 
     float: right;
     display: block;
+    top: 0;
 
 }
 
@@ -184,7 +185,7 @@ input[type=submit] {
     position: relative;
     font-size: 0.8em;
     width: 110%;
-    animation: move 12s linear infinite;
+    animation: move 10s linear infinite;
 
 }
 
@@ -257,16 +258,9 @@ input[type=submit] {
 
 }
 
-.navigationBar ul li:first-child > a {
-
-    display: inline-block;
-
-}
-
 .navigationBar.dropmenu ul li a {
 
     display: block;
-    top: 1em;
     float: none;
 
 }
@@ -402,15 +396,24 @@ input[type=submit] {
     display: none;
     position: fixed;
     z-index: 200;
-    margin-top: 5em;
+    margin-top: 1em;
     margin-left: 50vw;
     padding: 0;
     transform: translateX(-50%);
-    max-width: 900px;
+    max-width: 800px;
     width: 80%;
     background-color: rgb(0, 0, 0);
     border: 1px solid;
     border-color: rgb(154, 117, 55);
+    animation-name: slide-in;
+    animation-duration: 0.2s;
+
+}
+
+@keyframes slide-in {
+
+    from {margin-top: -10em; opacity: 0}
+    to {margin-top: 1em; opacity: 1}
 
 }
 
@@ -469,6 +472,14 @@ input[type=submit] {
         display: none;
 
     }
+
+    .banWrapper span {
+
+        animation: move 16s linear infinite;
+    
+    }
+
+
 
 }
 
@@ -564,6 +575,12 @@ input[type=submit] {
         max-width: 400px;
         padding-right: 2em;
 
+    }
+
+    .banWrapper span {
+
+        animation: move 22s linear infinite;
+    
     }
 
 }

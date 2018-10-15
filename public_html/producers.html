@@ -69,7 +69,7 @@
                 <div class="popWindowContent">
 
                     <span class="close">&times;</span>
-                    <h3>Thank you for your subscription!</h3>
+                    <h3>Thank you for registering!</h3>
                     <p>Go to your mail inbox and check the confirmation email.</p>
 
                 </div>
@@ -92,30 +92,30 @@
                     </div>
                     
                     <div>
-                        <form>
+                        <form id="form">
 
                             <fieldset>
                                 <b>First name:</b><br>
-                                <input type="text" name="Firstname"><br><br>
+                                <input type="text" name="Firstname" required><br><br>
                                 <b>Last name:</b><br>
-                                <input type="text" name="Lastname"><br><br>
+                                <input type="text" name="Lastname" required><br><br>
                                 <b>Email adress:</b><br>
-                                <input type="text" name="Email"><br><br>
+                                <input type="text" name="Email" required><br><br>
                                 <b>Username:</b><br>
-                                <input type="text" name="Username"><br><br>
+                                <input type="text" name="Username" required><br><br>
                                 <b>Password:</b><br>
-                                <input type="password" name="Password"><br><br>
+                                <input type="password" name="Password" required><br><br>
                             </fieldset><br>
 
                             <fieldset>
-                                <b>Please rate your production skill:</b><br><br>
-                                <input type="radio" name="skill" value="Beginner" checked> Beginner<br><br>
+                                <b>Please rate your production skill (not required):</b><br><br>
+                                <input type="radio" name="skill" value="Beginner"> Beginner<br><br>
                                 <input type="radio" name="skill" value="Amateur"> Amateur<br><br>
                                 <input type="radio" name="skill" value="Efficient"> Efficient<br><br>
                                 <input type="radio" name="skill" value="Advanced"> Advanced<br><br>
                             </fieldset><br>
 
-                            <input type="submit" value="Submit" id="button">
+                            <input type="submit" value="Register" id="button">
 
                         </form>
                     </div>
