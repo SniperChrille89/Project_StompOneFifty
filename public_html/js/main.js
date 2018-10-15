@@ -1,4 +1,5 @@
-// TOGGLE NAVBAR
+// TOGGLE NAVBAR (Unfortunately just a copy-paste from the navbar-exercise with
+// slightly different design configurations)
 
 function navToggle() {
         
@@ -20,7 +21,8 @@ function navToggle() {
 
 
 
-// POP MESSAGE WINDOW
+// POP MESSAGE WINDOW/MODAL BOX (Semi-copied from W3Schools with slight modifications to suit my needs plus
+// a function that checks if the form is filled properly before submit)
 
 var popWindow = document.getElementById('popUp');
 var button = document.getElementById('button');
