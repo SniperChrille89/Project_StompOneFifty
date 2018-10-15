@@ -24,16 +24,16 @@ function navToggle() {
 // POP MESSAGE WINDOW/MODAL BOX (Semi-copied from W3Schools with slight modifications to suit my needs plus
 // a function that checks if the form is filled properly before submit)
 
-var popWindow = document.getElementById('popUp');
-var button = document.getElementById('button');
-var span = document.getElementsByClassName('close')[0];
-var form = document.getElementById('form');
-var inputs = form.getElementsByTagName('input');
+var popWindow = document.getElementById('popUp');       //Gets popUp-ID from the DIV
+var button = document.getElementById('button');         //Gets button-ID from submit
+var span = document.getElementsByClassName('close')[0]; //Gets classname from &times; element
+var form = document.getElementById('form');             //Gets form ID from the html form
+var inputs = form.getElementsByTagName('input');        //Gets input tags!!
 
 
-button.onclick = function(event) {
-
-    for (var i = 0; i < inputs.length; i++) {
+button.onclick = function(event) {                      //This onclick function sets of an event(preventDefault)
+                                                        //so that the page wont refresh until "close" is clicked later on
+    for (var i = 0; i < inputs.length; i++) {           //Forloop that checks if all form fields with the required-attribute is filled
 
         if (inputs[i].hasAttribute("required")) {
 
@@ -46,13 +46,13 @@ button.onclick = function(event) {
         }
     }
 
-    popWindow.style.display = "block";
+    popWindow.style.display = "block";                  //If the fields are correctly filled this modal box appears
     console.log("SHOW");
-    event.preventDefault();
+    event.preventDefault();                             //Prevents the submit-action to happen and refresh the page...
 
-}
+}                                                       //until...
 
-span.onclick = function() {
+span.onclick = function() {                             //this function is executed!
 
     popWindow.style.display = "none";
     console.log("HIDE");

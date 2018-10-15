@@ -2,31 +2,38 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Teko:600');
 
 body {
 
+    max-width: 100%;
     font-family: 'Raleway', sans-serif;
     background-image: url(../media/img/BG-02.jpg);
     background-size: 100% auto;
     color: rgb(154, 117, 55);
+    overflow-x: hidden;
 
 }
 
 h1 {
 
     color: rgb(154, 117, 55);
+    font-family: 'Teko', 'Raleway', sans-serif;
 
 }
 
 h2 {
 
     padding: 0;
+    font-family: 'Teko', 'Raleway', sans-serif;
 
 }
 
 h3 {
 
     padding: 0;
+    font-size: 1.5em;
+    font-family: 'Teko', 'Raleway', sans-serif;
 
 }
 
@@ -44,11 +51,22 @@ footer {
     background-color: rgba(0, 0, 5, 0.88);
     position: fixed;
     width: 100%;
+    height: 3.5em;
     left: 0;
     bottom: 0;
     margin: 0;
     border-top: 1px solid;
     border-color: rgb(73, 56, 28);
+    font-size: 0.8em;
+
+}
+
+footer p {
+
+    float: left;
+    padding: 0;
+    margin-top: 1em;
+    width: 50vw;
 
 }
 
@@ -63,7 +81,6 @@ footer ul {
 footer ul li {
 
     display: inline;
-    margin-right: 0.5em;
     float: right;
 
 }
@@ -131,7 +148,7 @@ input[type=submit] {
 
 }
 
-#fbIcon {
+.fbIcon { /* Had to make a class here tho... */
 
     text-decoration: none;
     color: rgb(154, 117, 55);
@@ -140,7 +157,7 @@ input[type=submit] {
 
 }
 
-#fbIcon:hover {
+.fbIcon:hover {
 
     animation: fadeIn 0.2s linear;
     color: rgb(223, 169, 76);
@@ -328,7 +345,8 @@ input[type=submit] {
 .footwrapper {
 
     display: grid;
-    max-width: 890px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
     width: 70%;
     margin-left: 50vw;
     margin-bottom: 0;
@@ -356,6 +374,17 @@ input[type=submit] {
 
 }
 
+.icon-size {
+
+    max-width: 400px;
+    width: 60vw;
+    height: auto;
+    padding: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+
 .col-1 {
 
     display: grid;
@@ -379,12 +408,22 @@ input[type=submit] {
 .center {
 
     margin: 0 auto;
+    animation-name: opacity;
+    animation-duration: 1s;
+
+}
+
+@keyframes opacity {
+
+    from {opacity: 0;}
+    to {opacity: 1;}
 
 }
 
 .center-2 {
 
     margin: 0 auto;
+    animation: 1s opacity;
 
 }
 
